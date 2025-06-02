@@ -29,10 +29,30 @@
   <script src="custom.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- 1. Configure Chatling -->
+  <script>
+    window.chtlConfig = { chatbotId: "4343423943" };
+  </script>
 
-  <script> window.chtlConfig = { chatbotId: "4343423943" } </script>
+  <!-- 2. Load Chatling Widget -->
   <script async data-id="4343423943" id="chtl-script" type="text/javascript"
     src="https://chatling.ai/js/embed.js"></script>
+
+  <!-- 3. Attempt to Auto-Open After 8 Seconds -->
+  <script>
+    setTimeout(function () {
+      // Try to programmatically open the widget if Chatling exposes an API
+      // Replace the following with the correct function if Chatling provides one
+      if (window.Chatling && typeof window.Chatling.open === "function") {
+        window.Chatling.open();
+      } else {
+        // Optionally, try to click the widget button as a fallback (not guaranteed to work)
+        var widgetButton = document.querySelector('[class*="chatling"] [role="button"]');
+        if (widgetButton) widgetButton.click();
+      }
+    }, 5000);
+  </script>
+
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -2063,8 +2083,7 @@
             <a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800" href="./it-services.html">IT Services</a>
           </p>
           <p>
-            <a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800"
-              href="./it-services/web-development.html">
+            <a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800" href="./it-services/web-development.html">
               Web development
             </a>
           </p>
@@ -2078,7 +2097,8 @@
               href="./enterprise-resource-planning.html">ERP</a>
           </p>
           <p>
-            <a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800" href="./data-services.html">Data Services</a>
+            <a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800" href="./data-services.html">Data
+              Services</a>
           </p>
         </div>
       </div>
