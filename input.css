@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+   
+  .cont-btn {
+    @apply text-white bg-[#4E8BE4] hover:bg-black focus:ring-4 text-base font-medium px-6 py-3 text-center shadow-[0_17px_35px_0px_#CEDCF2] rounded; 
+  }
+  .menuitem1 {
+    @apply block py-6  p-4  text-base leading-6  hs-scrollspy-active:text-sec  hs-scrollspy-active:font-bold   hs-scrollspy-active:border-l-4  hs-scrollspy-active:border-[#4E8BE4] hs-scrollspy-active:shadow-2xl capitalize active:font-bold;
+  }
+  .menuactive1 {
+    @apply block text-base font-medium leading-6   active:font-bold focus:outline-none hs-scrollspy-active:font-bold border-l-4 border-[#4E8BE4] my-5 py-6 p-4    shadow-xl;
+  }
+  .heada {
+    @apply text-sm text-para uppercase;
+  }
+   
+}

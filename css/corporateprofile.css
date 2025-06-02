@@ -1,0 +1,32 @@
+ /* Hide scrollbar */
+ .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Wrapper to hide overflow */
+  #scroll-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  /* Container with original and duplicate content */
+  #scroll-container {
+    display: flex;
+    gap: 1.5rem;
+    width: max-content;
+    animation: scroll 40s linear infinite; /* Adjust speed with 20s */
+  }
+
+  /* Smooth continuous scroll animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
