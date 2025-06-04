@@ -17,6 +17,31 @@
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <link href="./output.css" rel="stylesheet" />
   <script src="preline.js"></script>
+
+   <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-4753be9f-9b30-449f-a673-0305a7fb609a" data-elfsight-app-lazy></div>
+
+  <!-- 1. Configure Chatling -->
+  <script>
+    window.chtlConfig = { chatbotId: "4343423943" };
+  </script>
+
+  <!-- 2. Load Chatling Widget -->
+  <script async data-id="4343423943" id="chtl-script" type="text/javascript"
+    src="https://chatling.ai/js/embed.js"></script>
+
+  <!-- 3. Attempt to Auto-Open After  Seconds -->
+  <script>
+    setTimeout(function () {
+      if (window.Chatling && typeof window.Chatling.open === "function") {
+        window.Chatling.open();
+      } else {
+        var widgetButton = document.querySelector('[class*="chatling"] [role="button"]');
+        if (widgetButton) widgetButton.click();
+      }
+    }, 8000);
+  </script>
   
 </head>
 
