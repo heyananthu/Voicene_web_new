@@ -29,6 +29,11 @@
   <script src="custom.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-4753be9f-9b30-449f-a673-0305a7fb609a" data-elfsight-app-lazy></div>
+
+
   <!-- 1. Configure Chatling -->
   <script>
     window.chtlConfig = { chatbotId: "4343423943" };
@@ -38,19 +43,17 @@
   <script async data-id="4343423943" id="chtl-script" type="text/javascript"
     src="https://chatling.ai/js/embed.js"></script>
 
-  <!-- 3. Attempt to Auto-Open After 8 Seconds -->
+  <!-- 3. Attempt to Auto-Open After  Seconds -->
   <script>
     setTimeout(function () {
-      // Try to programmatically open the widget if Chatling exposes an API
-      // Replace the following with the correct function if Chatling provides one
+
       if (window.Chatling && typeof window.Chatling.open === "function") {
         window.Chatling.open();
       } else {
-        // Optionally, try to click the widget button as a fallback (not guaranteed to work)
         var widgetButton = document.querySelector('[class*="chatling"] [role="button"]');
         if (widgetButton) widgetButton.click();
       }
-    }, 5000);
+    }, 8000);
   </script>
 
 
