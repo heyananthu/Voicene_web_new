@@ -16,3 +16,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
     observer.observe(card);
 });
+
+
