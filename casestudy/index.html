@@ -924,50 +924,85 @@
         </nav>
     </section>
 
-    <section class="relative bg-gradient-to-br from-gray-100 via-blue-50 to-white py-20 overflow-hidden">
+    <section class="relative bg-gradient-to-br from-gray-100 via-blue-50 to-gray-100 py-20 overflow-hidden">
         <!-- Background Wave Animation -->
         <div class="absolute inset-0 pointer-events-none">
-            <div class="wave-bg"></div>
-            <!-- Particles Overlay -->
-            <div class="particles"></div>
+            <div class="wave-bg"></div><!-- background wave -->
+            <div class="particles"></div><!-- particles -->
         </div>
 
         <div class="max-w-7xl mx-auto px-6 md:px-12">
-            <!-- Header -->
-            <div class="text-center mb-16">
+            <!-- Header with Filters -->
+            <div class="flex justify-between items-center mb-16">
                 <h2
-                    class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 animate-gradient">
+                    class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600">
                     Our Success Stories
                 </h2>
-                <div
-                    class="w-32 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mt-4 rounded-full animate-pulse">
+
+                <div class="flex gap-4">
+                    <!-- Filter by Industries -->
+                    <div class="relative">
+                        <select id="filterIndustries"
+                            class="appearance-none bg-white border border-gray-300 text-gray-700 px-4 py-2 pr-8 rounded-md font-medium shadow-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
+                            <option value="">Industries</option>
+                            <option value="Spiritual">Spiritual</option>
+                            <option value="E-commerce">E-commerce</option>
+                            <option value="SaaS">SaaS</option>
+                            <option value="Construction">Construction</option>
+                        </select>
+                        <span class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <!-- Filter by Expertises -->
+                    <div class="relative">
+                        <select id="filterExpertises"
+                            class="appearance-none bg-white border border-gray-300 text-gray-700 px-4 py-2 pr-8 rounded-md font-medium shadow-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
+                            <option value="">Expertises</option>
+                            <option value="SEO">SEO</option>
+                            <option value="SMM">SMM</option>
+                            <option value="Digital Marketing">Digital Marketing</option>
+                        </select>
+                        <span class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </span>
+                    </div>
                 </div>
             </div>
 
             <!-- Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div id="casestudies" class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Card 1: Arppan -->
-                <div
-                    class="card glassmorphic rounded-2xl overflow-hidden transform transition-all duration-500 hover:shadow-xl hover:-translate-y-2">
+                <div class="card glassmorphic rounded-2xl overflow-hidden transform transition-all duration-500 hover:shadow-xl hover:-translate-y-2"
+                    data-industry="Spiritual" data-expertise="SEO">
                     <div class="relative group">
                         <img class="w-full h-56 object-cover" src="./img/Arppan.png" alt="Arppan Temple Booking" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-gray-200/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center">
-                            <p class="text-gray-800 text-sm font-medium p-4">Temple Pooja Booking Service</p>
+                            <p class="text-gray-800 text-sm font-semibold p-4">Temple Pooja Booking Service</p>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h5 class="mb-3 text-2xl font-bold text-indigo-600">
+                        <h5 class="mb-3 text-2xl font-semibold text-indigo-600">
                             Arppan
                         </h5>
                         <p class="mb-4 text-gray-700 text-[15px] leading-relaxed">
-                            Voicene executed a comprehensive SEO strategy to enhance the organic visibility and traffic
-                            for Arppan, focusing on both the website and app.
+                            Voicene implemented a comprehensive SEO strategy for Arppan, focusing on both website and
+                            app.
                         </p>
                         <a href="./arppan.html"
-                            class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg hover:from-blue-700 hover:to-purple-700 focus:ring-4 focus:ring-blue-200">
+                            class="inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-50 bg-gradient-to-r from-blue-600 to-purple-600 rounded-md hover:from-blue-700 hover:to-purple-700 focus:outline-none">
                             Read More
-                            <svg class="rtl:rotate-180 w-4 h-4 ms-2" aria-hidden="true"
+                            <svg class="rtl:rotate-180 w-4 h-4 ml-2" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -977,28 +1012,27 @@
                 </div>
 
                 <!-- Card 2: Wireless Gadgetz -->
-                <div
-                    class="card glassmorphic rounded-2xl overflow-hidden transform transition-all duration-500 hover:shadow-xl hover:-translate-y-2">
+                <div class="card glassmorphic rounded-2xl overflow-hidden transform transition-all duration-500 hover:shadow-xl hover:-translate-y-2"
+                    data-industry="E-commerce" data-expertise="SMM">
                     <div class="relative group">
                         <img class="w-full h-56 object-cover" src="./img/wireless-img1.webp"
                             alt="Wireless Gadgetz Retail" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-gray-200/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center">
-                            <p class="text-gray-800 text-sm font-medium p-4">Accessible Wireless Retail</p>
+                            <p class="text-gray-800 text-sm font-semibold p-4">Accessible Wireless Retail</p>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h5 class="mb-3 text-2xl font-bold text-indigo-600">
+                        <h5 class="mb-3 text-2xl font-semibold text-indigo-600">
                             Wireless Gadgetz
                         </h5>
                         <p class="mb-4 text-gray-700 text-[15px] leading-relaxed">
-                            Over the past 6 months, Voicene enhanced the SEO performance for Wireless Gadgetz, a
-                            Texas-based retailer providing accessible wireless gadgets with STAP vouchers.
+                            Voicene enhanced SEO for Wireless Gadgetz, a Texas-based retailer providing STAP vouchers.
                         </p>
                         <a href="./wireless-gadgetz.html"
-                            class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg hover:from-blue-700 hover:to-purple-700 focus:ring-4 focus:ring-blue-200">
+                            class="inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-50 bg-gradient-to-r from-blue-600 to-purple-600 rounded-md hover:from-blue-700 hover:to-purple-700 focus:outline-none">
                             Read More
-                            <svg class="rtl:rotate-180 w-4 h-4 ms-2" aria-hidden="true"
+                            <svg class="rtl:rotate-180 w-4 h-4 ml-2" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -1008,27 +1042,26 @@
                 </div>
 
                 <!-- Card 3: Technetmark -->
-                <div
-                    class="card glassmorphic rounded-2xl overflow-hidden transform transition-all duration-500 hover:shadow-xl hover:-translate-y-2">
+                <div class="card glassmorphic rounded-2xl overflow-hidden transform transition-all duration-500 hover:shadow-xl hover:-translate-y-2"
+                    data-industry="SaaS" data-expertise="Digital Marketing">
                     <div class="relative group">
                         <img class="w-full h-56 object-cover" src="./img/technetmark.jpg" alt="Technetmark Solutions" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-gray-200/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center">
-                            <p class="text-gray-800 text-sm font-medium p-4">Tech Solutions Provider</p>
+                            <p class="text-gray-800 text-sm font-semibold p-4">Tech Solutions Provider</p>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h5 class="mb-3 text-2xl font-bold text-indigo-600">
+                        <h5 class="mb-3 text-2xl font-semibold text-indigo-600">
                             Technetmark
                         </h5>
                         <p class="mb-4 text-gray-700 text-[15px] leading-relaxed">
-                            Voicene implemented a targeted SEO campaign for Technetmark, boosting its online presence
-                            and driving qualified leads for its tech solutions.
+                            Voicene implemented a targeted SEO campaign for Technetmark.
                         </p>
                         <a href="./technetmark.html"
-                            class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg hover:from-blue-700 hover:to-purple-700 focus:ring-4 focus:ring-blue-200">
+                            class="inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-50 bg-gradient-to-r from-blue-600 to-purple-600 rounded-md hover:from-blue-700 hover:to-purple-700 focus:outline-none">
                             Read More
-                            <svg class="rtl:rotate-180 w-4 h-4 ms-2" aria-hidden="true"
+                            <svg class="rtl:rotate-180 w-4 h-4 ml-2" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -1038,27 +1071,26 @@
                 </div>
 
                 <!-- Card 4: Aviratha -->
-                <div
-                    class="card glassmorphic rounded-2xl overflow-hidden transform transition-all duration-500 hover:shadow-xl hover:-translate-y-2">
+                <div class="card glassmorphic rounded-2xl overflow-hidden transform transition-all duration-500 hover:shadow-xl hover:-translate-y-2"
+                    data-industry="Construction" data-expertise="SEO">
                     <div class="relative group">
                         <img class="w-full h-56 object-cover" src="./img/aviratha.webp" alt="Aviratha Services" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-gray-200/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center">
-                            <p class="text-gray-800 text-sm font-medium p-4">Cultural Services Platform</p>
+                            <p class="text-gray-800 text-sm font-semibold p-4">Cultural Services Platform</p>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h5 class="mb-3 text-2xl font-bold text-indigo-600">
+                        <h5 class="mb-3 text-2xl font-semibold text-indigo-600">
                             Aviratha
                         </h5>
                         <p class="mb-4 text-gray-700 text-[15px] leading-relaxed">
-                            Voicene implemented a targeted SEO campaign for Aviratha, boosting its online presence
-                            and driving qualified leads for its tech solutions.
+                            Voicene implemented a targeted SEO campaign for Aviratha.
                         </p>
                         <a href="./aviratha.html"
-                            class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg hover:from-blue-700 hover:to-purple-700 focus:ring-4 focus:ring-blue-200">
+                            class="inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-50 bg-gradient-to-r from-blue-600 to-purple-600 rounded-md hover:from-blue-700 hover:to-purple-700 focus:outline-none">
                             Read More
-                            <svg class="rtl:rotate-180 w-4 h-4 ms-2" aria-hidden="true"
+                            <svg class="rtl:rotate-180 w-4 h-4 ml-2" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -1066,27 +1098,45 @@
                         </a>
                     </div>
                 </div>
+
             </div>
         </div>
 
-        <!-- JavaScript for Scroll Animation -->
         <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const cards = document.querySelectorAll('.card');
+            document.getElementById('filterIndustries').addEventListener('change', filterCards);
+            document.getElementById('filterExpertises').addEventListener('change', filterCards);
 
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('animate-fade-in');
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }, { threshold: 0.2 });
+            function filterCards() {
+                const industry = document.getElementById('filterIndustries').value.trim().toLowerCase();
+                const expertise = document.getElementById('filterExpertises').value.trim().toLowerCase();
 
-                cards.forEach(card => observer.observe(card));
-            });
+                document.querySelectorAll('.card').forEach(function (item) {
+                    const itemIndustry = item.dataset.industry.toLowerCase();
+                    const itemExpertise = item.dataset.expertise.toLowerCase();
+
+                    if (
+                        (industry === '' ||
+                            itemIndustry === industry) &&
+                        (expertise === '' ||
+                            itemExpertise === expertise)
+                    ) {
+                        item.classList.remove('hidden'); // show
+                    } else {
+                        item.classList.add('hidden'); // hide
+                    }
+                });
+            }
         </script>
+
+        <style>
+            .hidden {
+                display: none;
+            }
+        </style>
     </section>
+
+
+
 
     <style>
         /* Glassmorphic Effect */
