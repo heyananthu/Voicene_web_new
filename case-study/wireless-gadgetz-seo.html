@@ -20,15 +20,38 @@
     <link href="./../output.css" rel="stylesheet" />
     <script src="../preline.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.0/flowbite.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="animationScript.js"></script>
+    <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-4753be9f-9b30-449f-a673-0305a7fb609a" data-elfsight-app-lazy></div>
+
+    <!-- 1. Configure Chatling -->
+    <script>
+        window.chtlConfig = { chatbotId: "4343423943" };
+    </script>
+
+    <!-- 2. Load Chatling Widget -->
+    <script async data-id="4343423943" id="chtl-script" type="text/javascript"
+        src="https://chatling.ai/js/embed.js"></script>
+
+    <!-- 3. Attempt to Auto-Open After  Seconds -->
+    <script>
+        setTimeout(function () {
+            if (window.Chatling && typeof window.Chatling.open === "function") {
+                window.Chatling.open();
+            } else {
+                var widgetButton = document.querySelector('[class*="chatling"] [role="button"]');
+                if (widgetButton) widgetButton.click();
+            }
+        }, 8000);
+    </script>
 </head>
 
 <body>
 
 
-    <!-- ========== HEADER ========== -->
+   <!-- ========== HEADER ========== -->
     <header class="sticky inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full">
         <nav class="relative max-w-7xl w-full bg-white rounded-[28px] py-3 text-md md:flex md:items-center md:justify-between md:py-0 mx-2 lg:mx-auto"
             aria-label="Global">
@@ -787,10 +810,10 @@
                                 Blogs
                             </a>
 
-                            <!-- <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                        href="casestudies.html">
-                        Case Studies
-                    </a> -->
+                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                href="../case-study/">
+                                Case Studies
+                            </a>
 
                             <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
                                 href="../company-profile.html">
@@ -851,7 +874,6 @@
         </nav>
     </header>
     <!-- ========== END HEADER ========== -->
-
     <section>
         <div class="relative">
             <img src="./img/wireless-banner.jpg" class="absolute inset-0 object-cover w-full h-full" alt="" />
@@ -935,8 +957,8 @@
             </div>
 
             <!-- Stats Section -->
-             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 text-center">
-               
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 text-center">
+
                 <div class="border-r-0 md:border-r border-gray-200">
                     <p class="text-4xl font-bold text-gray-800">506</p>
                     <p class="text-sm text-gray-600 uppercase mt-2">Traffic Clicks</p>
@@ -1046,24 +1068,7 @@
         </script>
     </section>
 
-    <style>
-        /* Fade-In Animation for Scroll */
-        .animate-fade-in {
-            animation: fadeIn 0.8s ease-out forwards;
-        }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(15px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
 
 
     <!-- ========== FOOTER ========== -->

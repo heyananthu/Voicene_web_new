@@ -45,140 +45,141 @@
 
 <body>
   <!-- ========== HEADER ========== -->
-  <header class="sticky inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full">
-    <nav
-      class="relative max-w-7xl w-full bg-white rounded-[28px] py-3 text-md md:flex md:items-center md:justify-between md:py-0 mx-2 lg:mx-auto"
-      aria-label="Global">
-      <div class="flex items-center justify-between">
-        <!-- Logo -->
-        <a class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80" href="/"
-          aria-label="Preline">
-          <img src="../img/Logo_Balck.png" alt="Logo_Balck" class="w-56 my-4" />
-        </a>
-        <!-- End Logo -->
+    <header class="sticky inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full">
+        <nav class="relative max-w-7xl w-full bg-white rounded-[28px] py-3 text-md md:flex md:items-center md:justify-between md:py-0 mx-2 lg:mx-auto"
+            aria-label="Global">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
+                    href="/" aria-label="Preline">
+                    <img src="../img/Logo_Balck.png" alt="Logo_Balck" class="w-56 my-4" />
+                </a>
+                <!-- End Logo -->
 
-        <div class="md:hidden">
-          <button type="button"
-            class="hs-collapse-toggle size-8 flex justify-center items-center text-sm font-semibold rounded-full bg-gray-800 text-gray-700 disabled:opacity-50 disabled:pointer-events-none"
-            data-hs-collapse="#navbar-collapse" aria-controls="navbar-collapse" aria-label="Toggle navigation">
-            <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-              height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <line x1="3" x2="21" y1="6" y2="6" />
-              <line x1="3" x2="21" y1="12" y2="12" />
-              <line x1="3" x2="21" y1="18" y2="18" />
-            </svg>
-            <svg class="hs-collapse-open:block hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg"
-              width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 6 6 18" />
-              <path d="m6 6 12 12" />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <!-- Collapse -->
-      <div id="navbar-collapse"
-        class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
-        <div class="flex flex-col md:flex-row md:items-center md:justify-end py-2 md:py-0 md:ps-7">
-          <a class="py-3 ps-px sm:px-3 md:py-4 text-gray-600 hover:text-gray-300 focus:outline-none focus:text-gray-300"
-            href="../index.html" aria-current="page">Home
-          </a>
-          <a class="py-3 ps-px sm:px-3 md:py-4 text-gray-600 hover:text-gray-300 focus:outline-none focus:text-gray-300"
-            href="../about-us.html">About
-          </a>
-
-
-
-          <!-- services-->
-
-
-          <div
-            class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--trigger:hover] [--adaptive:none] py-3 ps-px sm:px-3 md:py-4">
-            <button type="button"
-              class="flex items-center w-full text-gray-600 hover:text-gray-300 focus:outline-none focus:text-gray-300">
-              Services
-              <svg class="flex-shrink-0 ms-1 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="m6 9 6 6 6-6" />
-              </svg>
-            </button>
-
-            <div
-              class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-62 hidden z-10 bg-main md:shadow-md rounded-lg p-2 before:absolute top-full before:-top-5 before:start-0 before:w-full before:h-5">
-              <div
-                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
-                <button type="button"
-                  class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
-                  <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../it-services.html">
-                    IT Services
-                  </a>
-                  <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m6 9 6 6 6-6" />
-                  </svg>
-                </button>
-
-                <div
-                  class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../it-services/web-development.html">
-                    Web Development Service
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../it-services/custom-software-development.html">
-                    Custom Software Development Service
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../it-services/software-product-development.html">
-                    Software Product Development Service
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../it-services/mobile-app-development.html">
-                    Mobile app development Services
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../it-services/software-testing.html">
-                    Software Testing Services
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../it-services/ui-ux-design.html">
-                    UI/UX
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../it-services/ai-ml-development.html">
-                    AI & ML
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../it-services/iot-solutions.html">
-                    IOT
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../it-services/blockchain-development.html">
-                    Blockchain
-                  </a>
-
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../it-services/data-analytics.html">
-                    Data Analytics
-                  </a>
+                <div class="md:hidden">
+                    <button type="button"
+                        class="hs-collapse-toggle size-8 flex justify-center items-center text-sm font-semibold rounded-full bg-gray-800 text-gray-700 disabled:opacity-50 disabled:pointer-events-none"
+                        data-hs-collapse="#navbar-collapse" aria-controls="navbar-collapse"
+                        aria-label="Toggle navigation">
+                        <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" x2="21" y1="6" y2="6" />
+                            <line x1="3" x2="21" y1="12" y2="12" />
+                            <line x1="3" x2="21" y1="18" y2="18" />
+                        </svg>
+                        <svg class="hs-collapse-open:block hidden flex-shrink-0 size-4"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
                 </div>
-              </div>
+            </div>
 
-              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                href="../staff-augmentation.html">
-                Staff Augmentation
-              </a>
-              <!-- 
+            <!-- Collapse -->
+            <div id="navbar-collapse"
+                class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-end py-2 md:py-0 md:ps-7">
+                    <a class="py-3 ps-px sm:px-3 md:py-4 text-gray-600 hover:text-gray-300 focus:outline-none focus:text-gray-300"
+                        href="../index.html" aria-current="page">Home
+                    </a>
+                    <a class="py-3 ps-px sm:px-3 md:py-4 text-gray-600 hover:text-gray-300 focus:outline-none focus:text-gray-300"
+                        href="../about-us.html">About
+                    </a>
+
+
+
+                    <!-- services-->
+
+
+                    <div
+                        class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--trigger:hover] [--adaptive:none] py-3 ps-px sm:px-3 md:py-4">
+                        <button type="button"
+                            class="flex items-center w-full text-gray-600 hover:text-gray-300 focus:outline-none focus:text-gray-300">
+                            Services
+                            <svg class="flex-shrink-0 ms-1 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </button>
+
+                        <div
+                            class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-62 hidden z-10 bg-main md:shadow-md rounded-lg p-2 before:absolute top-full before:-top-5 before:start-0 before:w-full before:h-5">
+                            <div
+                                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
+                                <button type="button"
+                                    class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
+                                    <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../it-services.html">
+                                        IT Services
+                                    </a>
+                                    <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
+
+                                <div
+                                    class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../it-services/web-development.html">
+                                        Web Development Service
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../it-services/custom-software-development.html">
+                                        Custom Software Development Service
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../it-services/software-product-development.html">
+                                        Software Product Development Service
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../it-services/mobile-app-development.html">
+                                        Mobile app development Services
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../it-services/software-testing.html">
+                                        Software Testing Services
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../it-services/ui-ux-design.html">
+                                        UI/UX
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../it-services/ai-ml-development.html">
+                                        AI & ML
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../it-services/iot-solutions.html">
+                                        IOT
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../it-services/blockchain-development.html">
+                                        Blockchain
+                                    </a>
+
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../it-services/data-analytics.html">
+                                        Data Analytics
+                                    </a>
+                                </div>
+                            </div>
+
+                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                href="../staff-augmentation.html">
+                                Staff Augmentation
+                            </a>
+                            <!-- 
 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
   href="dataserv.html">
   Data Services
 </a> -->
-              <!-- 
+                            <!-- 
 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
   href="seotech.html">
   SEO & Digital Marketing
@@ -187,672 +188,685 @@
 
 
 
-              <div
-                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
-                <button type="button"
-                  class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
-                  <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../data-services.html">
-                    Data Services
-                  </a>
-                  <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m6 9 6 6 6-6" />
-                  </svg>
-                </button>
+                            <div
+                                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
+                                <button type="button"
+                                    class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
+                                    <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../data-services.html">
+                                        Data Services
+                                    </a>
+                                    <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
 
-                <div
-                  class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../data-services/data-entry.html">
-                    Data Entry Services
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../data-services/data-annotation.html">
-                    Data Annotation
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../data-services/image-annotation-services.html">
-                    Image Annotation Services
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../data-services/ebook-conversion-services.html">
-                    Ebook Conversion Services
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../data-services/data-processing.html">
-                    Data Processing Services
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../data-services/data-conversion-services.html">
-                    Data Conversion Services
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../data-services/ocr-services.html">
-                    OCR Services
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../data-services/data-extraction-services.html">
-                    Data Extraction Services
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../data-services/data-digitization.html">
-                    Document Digigtization Services
-                  </a>
+                                <div
+                                    class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../data-services/data-entry.html">
+                                        Data Entry Services
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../data-services/data-annotation.html">
+                                        Data Annotation
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../data-services/image-annotation-services.html">
+                                        Image Annotation Services
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../data-services/ebook-conversion-services.html">
+                                        Ebook Conversion Services
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../data-services/data-processing.html">
+                                        Data Processing Services
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../data-services/data-conversion-services.html">
+                                        Data Conversion Services
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../data-services/ocr-services.html">
+                                        OCR Services
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../data-services/data-extraction-services.html">
+                                        Data Extraction Services
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../data-services/data-digitization.html">
+                                        Document Digigtization Services
+                                    </a>
 
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../data-services/data-mining.html">
-                    Data Mining
-                  </a>
-                </div>
-              </div>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../data-services/data-mining.html">
+                                        Data Mining
+                                    </a>
+                                </div>
+                            </div>
 
-              <!--               
+                            <!--               
 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
   href="callcent.html">
   Call Center Services
 </a> -->
-              <div
-                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
-                <button type="button"
-                  class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
-                  <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../call-center-services.html">
-                    Call Center Services
-                  </a>
-                  <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m6 9 6 6 6-6" />
-                  </svg>
-                </button>
+                            <div
+                                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
+                                <button type="button"
+                                    class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
+                                    <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../call-center-services.html">
+                                        Call Center Services
+                                    </a>
+                                    <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
 
-                <div
-                  class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../call-center-services/Inbound-Call-Center-Services.html">
-                    Inbound Call Center Services
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../call-center-services/lead-generation.html">
-                    Lead Generation Services
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../call-center-services/outbound-sales.html">
-                    Outbound Sales Services
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../call-center-services/appointment-setting.html">
-                    Appointment Settings
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../call-center-services/virtual-assistant.html">
-                    Virtual Assistant Services
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../call-center-services/technical-support.html">
-                    Technical Support
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../call-center-services/email-support.html">
-                    Email Support Services
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../call-center-services/live-chat-support.html">
-                    Live Chat Support Services
-                  </a>
-                </div>
-              </div>
-
-
-              <div
-                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
-                <button type="button"
-                  class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
-                  <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../revenue-cycle-management.html">
-                    Revenue Cycle Management
-                  </a>
-                  <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m6 9 6 6 6-6" />
-                  </svg>
-                </button>
-
-                <div
-                  class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../revenue-cycle-management/medical-coding.html">
-                    Medical Coding
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../revenue-cycle-management/medical-billing.html">
-                    Medical Billing
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../revenue-cycle-management/account-receivable.html">
-                    Account Receivables -Follow Up
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../revenue-cycle-management/virtual-physician.html">
-                    Virtual Physician Assist
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../revenue-cycle-management/payment-posting.html">
-                    Payment posting
-                  </a>
-                </div>
-              </div>
+                                <div
+                                    class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../call-center-services/Inbound-Call-Center-Services.html">
+                                        Inbound Call Center Services
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../call-center-services/lead-generation.html">
+                                        Lead Generation Services
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../call-center-services/outbound-sales.html">
+                                        Outbound Sales Services
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../call-center-services/appointment-setting.html">
+                                        Appointment Settings
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../call-center-services/virtual-assistant.html">
+                                        Virtual Assistant Services
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../call-center-services/technical-support.html">
+                                        Technical Support
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../call-center-services/email-support.html">
+                                        Email Support Services
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../call-center-services/live-chat-support.html">
+                                        Live Chat Support Services
+                                    </a>
+                                </div>
+                            </div>
 
 
-              <div
-                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
-                <button type="button"
-                  class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
-                  <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../enterprise-resource-planning.html">
-                    Enterprise Resource Planning
-                  </a>
-                  <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m6 9 6 6 6-6" />
-                  </svg>
-                </button>
+                            <div
+                                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
+                                <button type="button"
+                                    class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
+                                    <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../revenue-cycle-management.html">
+                                        Revenue Cycle Management
+                                    </a>
+                                    <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
 
-                <div
-                  class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../erp/odoo.html">
-                    ODOO
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../erp/sap.html">
-                    SAP
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../erp/microsoft-dynamics-365-erp.html">
-                    Microsoft Dynamics 365
-                  </a>
-                </div>
-              </div>
+                                <div
+                                    class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../revenue-cycle-management/medical-coding.html">
+                                        Medical Coding
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../revenue-cycle-management/medical-billing.html">
+                                        Medical Billing
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../revenue-cycle-management/account-receivable.html">
+                                        Account Receivables -Follow Up
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../revenue-cycle-management/virtual-physician.html">
+                                        Virtual Physician Assist
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../revenue-cycle-management/payment-posting.html">
+                                        Payment posting
+                                    </a>
+                                </div>
+                            </div>
 
 
-              <div
-                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
-                <button type="button"
-                  class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
-                  <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../it-infrastructure-management.html">
-                    IT Infrastructure Management Services
-                  </a>
-                  <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m6 9 6 6 6-6" />
-                  </svg>
-                </button>
+                            <div
+                                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
+                                <button type="button"
+                                    class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
+                                    <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../enterprise-resource-planning.html">
+                                        Enterprise Resource Planning
+                                    </a>
+                                    <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
 
-                <div
-                  class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../it-infrastructure/aws.html">
-                    AWS
-                  </a>
-                  <!-- <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                <div
+                                    class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../erp/odoo.html">
+                                        ODOO
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../erp/sap.html">
+                                        SAP
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../erp/microsoft-dynamics-365-erp.html">
+                                        Microsoft Dynamics 365
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div
+                                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
+                                <button type="button"
+                                    class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
+                                    <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../it-infrastructure-management.html">
+                                        IT Infrastructure Management Services
+                                    </a>
+                                    <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
+
+                                <div
+                                    class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../it-infrastructure/aws.html">
+                                        AWS
+                                    </a>
+                                    <!-- <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
             href="#">
             SAP
           </a> -->
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../it-infrastructure/azure.html">
-                    Azure
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../it-infrastructure/cloud-services.html">
-                    Cloud Services
-                  </a>
-                </div>
-              </div>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../it-infrastructure/azure.html">
+                                        Azure
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../it-infrastructure/cloud-services.html">
+                                        Cloud Services
+                                    </a>
+                                </div>
+                            </div>
 
 
 
-              <div
-                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
-                <button type="button"
-                  class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
-                  <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../seo-digital-marketing.html">
-                    SEO & Digital Marketing
-                  </a>
-                  <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m6 9 6 6 6-6" />
-                  </svg>
-                </button>
+                            <div
+                                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
+                                <button type="button"
+                                    class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
+                                    <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../seo-digital-marketing.html">
+                                        SEO & Digital Marketing
+                                    </a>
+                                    <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
 
-                <div
-                  class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../seo-digital-marketing/search-engine-optimization.html">
-                    Search Engine Optimisation
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../seo-digital-marketing/social-media-marketing.html">
-                    Social Media Marketing
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../seo-digital-marketing/performance-marketing.html">
-                    Performance Marketing
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+                                <div
+                                    class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../seo-digital-marketing/search-engine-optimization.html">
+                                        Search Engine Optimisation
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../seo-digital-marketing/social-media-marketing.html">
+                                        Social Media Marketing
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../seo-digital-marketing/performance-marketing.html">
+                                        Performance Marketing
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
 
-          <a class="py-3 ps-px sm:px-3 md:py-4 text-gray-600 hover:text-gray-300 focus:outline-none focus:text-gray-300"
-            href="../products">Products
-          </a>
+                    <a class="py-3 ps-px sm:px-3 md:py-4 text-gray-600 hover:text-gray-300 focus:outline-none focus:text-gray-300"
+                        href="../products">Products
+                    </a>
 
-          <!-- technologies-->
-
-          <div
-            class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--trigger:hover] [--adaptive:none] py-3 ps-px sm:px-3 md:py-4">
-            <button type="button"
-              class="flex items-center w-full text-gray-600 hover:text-gray-300 focus:outline-none focus:text-gray-300">
-              Technologies
-              <svg class="flex-shrink-0 ms-1 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="m6 9 6 6 6-6" />
-              </svg>
-            </button>
-
-            <div
-              class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-60 hidden z-10 bg-main md:shadow-md rounded-lg p-2 before:absolute top-full before:-top-5 before:start-0 before:w-full before:h-5">
-              <div
-                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
-                <button type="button"
-                  class="w-full flex justify-between items-center px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
-                  <a class="flex items-center gap-x-3.5 py-2 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../technologies/cloud.html">
-                    Cloud Technologies
-                  </a>
-                  <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m6 9 6 6 6-6" />
-                  </svg>
-                </button>
-
-                <div
-                  class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-48 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../technologies/cloud/aws.html">
-                    AWS
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../technologies/cloud/azure.html">
-                    Azure
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../technologies/cloud/google-cloud.html">
-                    Google Cloud
-                  </a>
-                </div>
-              </div>
-              <div
-                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
-                <button type="button"
-                  class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
-                  <a class="flex items-center gap-x-3.5 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../technologies/microsoft.html">
-                    Microsoft Technologies
-                  </a>
-                  <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m6 9 6 6 6-6" />
-                  </svg>
-                </button>
-
-                <div
-                  class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-48 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../technologies/microsoft/c-sharp.html">
-                    C#
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../technologies/microsoft/asp-dotnet.html">
-                    ASP DOTNET
-                  </a>
-                  <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../technologies/microsoft/sql.html">
-                    SQL
-                  </a>
-                </div>
-              </div>
-
-              <div
-                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
-                <button type="button"
-                  class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
-                  <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../technologies/javascript.html">
-                    Javascript Technologies
-                  </a>
-                  <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m6 9 6 6 6-6" />
-                  </svg>
-                </button>
-
-                <div
-                  class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
-                  <div
-                    class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
-                    <button type="button"
-                      class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
-                      <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                        href="../technologies/javaScript/frondend.html">
-                        Frontend
-                      </a>
-                      <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="m6 9 6 6 6-6" />
-                      </svg>
-                    </button>
+                    <!-- technologies-->
 
                     <div
-                      class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
-                      <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                        href="../technologies/javaScript/frondend/angular.html">
-                        Angular
-                      </a>
-                      <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                        href="../technologies/javaScript/frondend/reactjs.html">
-                        React Js
-                      </a>
-                      <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                        href="../technologies/javaScript/frondend/vue.html">
-                        Vue.js
-                      </a>
+                        class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--trigger:hover] [--adaptive:none] py-3 ps-px sm:px-3 md:py-4">
+                        <button type="button"
+                            class="flex items-center w-full text-gray-600 hover:text-gray-300 focus:outline-none focus:text-gray-300">
+                            Technologies
+                            <svg class="flex-shrink-0 ms-1 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </button>
+
+                        <div
+                            class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-60 hidden z-10 bg-main md:shadow-md rounded-lg p-2 before:absolute top-full before:-top-5 before:start-0 before:w-full before:h-5">
+                            <div
+                                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
+                                <button type="button"
+                                    class="w-full flex justify-between items-center px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
+                                    <a class="flex items-center gap-x-3.5 py-2 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../technologies/cloud.html">
+                                        Cloud Technologies
+                                    </a>
+                                    <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
+
+                                <div
+                                    class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-48 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../technologies/cloud/aws.html">
+                                        AWS
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../technologies/cloud/azure.html">
+                                        Azure
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../technologies/cloud/google-cloud.html">
+                                        Google Cloud
+                                    </a>
+                                </div>
+                            </div>
+                            <div
+                                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
+                                <button type="button"
+                                    class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
+                                    <a class="flex items-center gap-x-3.5 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../technologies/microsoft.html">
+                                        Microsoft Technologies
+                                    </a>
+                                    <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
+
+                                <div
+                                    class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-48 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../technologies/microsoft/c-sharp.html">
+                                        C#
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../technologies/microsoft/asp-dotnet.html">
+                                        ASP DOTNET
+                                    </a>
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../technologies/microsoft/sql.html">
+                                        SQL
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div
+                                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
+                                <button type="button"
+                                    class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
+                                    <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../technologies/javascript.html">
+                                        Javascript Technologies
+                                    </a>
+                                    <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
+
+                                <div
+                                    class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
+                                    <div
+                                        class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
+                                        <button type="button"
+                                            class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
+                                            <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                                href="../technologies/javaScript/frondend.html">
+                                                Frontend
+                                            </a>
+                                            <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4"
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="m6 9 6 6 6-6" />
+                                            </svg>
+                                        </button>
+
+                                        <div
+                                            class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
+                                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                                href="../technologies/javaScript/frondend/angular.html">
+                                                Angular
+                                            </a>
+                                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                                href="../technologies/javaScript/frondend/reactjs.html">
+                                                React Js
+                                            </a>
+                                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                                href="../technologies/javaScript/frondend/vue.html">
+                                                Vue.js
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
+                                        <button type="button"
+                                            class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
+                                            <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                                href="../technologies/javaScript/backend.html">
+                                                Backend
+                                            </a>
+                                            <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4"
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="m6 9 6 6 6-6" />
+                                            </svg>
+                                        </button>
+
+                                        <div
+                                            class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
+                                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                                href="../technologies/javaScript/backend/nodejs.html">
+                                                Node JS
+                                            </a>
+                                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                                href="../technologies/javaScript/backend/nextjs.html">
+                                                Next Js
+                                            </a>
+                                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                                href="../technologies/javaScript/backend/express.html">
+                                                Express JS
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
+                                <button type="button"
+                                    class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
+                                    <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../technologies/mobile-app-development.html">
+                                        Mobile app Development
+                                    </a>
+                                    <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
+
+                                <div
+                                    class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
+                                    <div
+                                        class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
+                                        <button type="button"
+                                            class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
+                                            <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                                href="../mobile-app-development/swift.html">
+                                                SWFT
+                                            </a>
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
+                                        <button type="button"
+                                            class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
+                                            <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                                href="../mobile-app-development/react-native.html">
+                                                React Native
+                                            </a>
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
+                                        <button type="button"
+                                            class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
+                                            <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                                href="../mobile-app-development/flutter.html">
+                                                Flutter
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                href="../technologies/devops.html">
+                                DevOps
+                            </a>
+                            <div
+                                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
+                                <button type="button"
+                                    class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
+                                    <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                        href="../technologies/test-automation.html">
+                                        Test Automation
+                                    </a>
+                                    <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
+
+                                <div
+                                    class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
+                                    <div
+                                        class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
+                                        <button type="button"
+                                            class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
+                                            <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                                href="../test-automation/selenium.html">
+                                                Selenium
+                                            </a>
+                                        </button>
+                                    </div>
+                                    <div
+                                        class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
+                                        <button type="button"
+                                            class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
+                                            <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                                href="../test-automation/jmeter.html">
+                                                Jmeter
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div
-                    class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
-                    <button type="button"
-                      class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
-                      <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                        href="../technologies/javaScript/backend.html">
-                        Backend
-                      </a>
-                      <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="m6 9 6 6 6-6" />
-                      </svg>
-                    </button>
+                    <!-- Industries-->
 
                     <div
-                      class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
-                      <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                        href="../technologies/javaScript/backend/nodejs.html">
-                        Node JS
-                      </a>
-                      <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                        href="../technologies/javaScript/backend/nextjs.html">
-                        Next Js
-                      </a>
-                      <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                        href="../technologies/javaScript/backend/express.html">
-                        Express JS
-                      </a>
+                        class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--trigger:hover] [--adaptive:none] py-3 ps-px sm:px-3 md:py-4">
+                        <button type="button"
+                            class="flex items-center w-full text-gray-600 hover:text-gray-300 focus:outline-none focus:text-gray-300">
+                            Industries
+                            <svg class="flex-shrink-0 ms-1 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </button>
+
+                        <div
+                            class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-60 hidden z-10 bg-main md:shadow-md rounded-lg p-2 before:absolute top-full before:-top-5 before:start-0 before:w-full before:h-5">
+                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                href="../industries/retail-ecommerce.html">
+                                Retail & Ecommerce
+                            </a>
+
+                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                href="../industries/social-media.html">
+                                Social Media
+                            </a>
+                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                href="../industries/hospitality-solutions.html">
+                                Hospitality
+                            </a>
+                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                href="../industries/human-resources-recruitment.html">
+                                Human Resources & Recruitment
+                            </a>
+                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                href="../industries/manufacturing-solutions.html">
+                                Manufacturing
+                            </a>
+                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                href="../industries/transportation.html">
+                                Transportation
+                            </a>
+                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                href="../industries/warehouse.html">
+                                Warehouse
+                            </a>
+                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                href="../industries/construction-facility-services.html">
+                                Construction & Facility Management
+                            </a>
+                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                href="../industries/healthcare.html">
+                                Healthcare
+                            </a>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
-                <button type="button"
-                  class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
-                  <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../technologies/mobile-app-development.html">
-                    Mobile app Development
-                  </a>
-                  <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m6 9 6 6 6-6" />
-                  </svg>
-                </button>
 
-                <div
-                  class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
-                  <div
-                    class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
-                    <button type="button"
-                      class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
-                      <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                        href="../mobile-app-development/swift.html">
-                        SWFT
-                      </a>
-                    </button>
-                  </div>
-                  <div
-                    class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
-                    <button type="button"
-                      class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
-                      <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                        href="../mobile-app-development/react-native.html">
-                        React Native
-                      </a>
-                    </button>
-                  </div>
-                  <div
-                    class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
-                    <button type="button"
-                      class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
-                      <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                        href="../mobile-app-development/flutter.html">
-                        Flutter
-                      </a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                href="../technologies/devops.html">
-                DevOps
-              </a>
-              <div
-                class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
-                <button type="button"
-                  class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
-                  <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                    href="../technologies/test-automation.html">
-                    Test Automation
-                  </a>
-                  <svg class="sm:-rotate-90 flex-shrink-0 ms-2 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m6 9 6 6 6-6" />
-                  </svg>
-                </button>
+                    <!-- Resources-->
 
-                <div
-                  class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-64 hidden z-10 md:mt-2 md:shadow-md rounded-lg p-2 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 !mx-[10px] top-0 end-full bg-main">
-                  <div
-                    class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
-                    <button type="button"
-                      class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
-                      <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                        href="../test-automation/selenium.html">
-                        Selenium
-                      </a>
-                    </button>
-                  </div>
-                  <div
-                    class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] relative">
-                    <button type="button"
-                      class="w-full flex justify-between items-center py-2 px-3 text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300">
-                      <a class="flex items-center rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                        href="../test-automation/jmeter.html">
-                        Jmeter
-                      </a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Industries-->
+                    <div
+                        class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--trigger:hover] [--adaptive:none] py-3 ps-px sm:px-3 md:py-4">
+                        <button type="button"
+                            class="flex items-center w-full text-gray-600 hover:text-gray-300 focus:outline-none focus:text-gray-300">
+                            Resources
+                            <svg class="flex-shrink-0 ms-1 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </button>
 
-          <div
-            class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--trigger:hover] [--adaptive:none] py-3 ps-px sm:px-3 md:py-4">
-            <button type="button"
-              class="flex items-center w-full text-gray-600 hover:text-gray-300 focus:outline-none focus:text-gray-300">
-              Industries
-              <svg class="flex-shrink-0 ms-1 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="m6 9 6 6 6-6" />
-              </svg>
-            </button>
+                        <div
+                            class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-48 hidden z-10 bg-main md:shadow-md rounded-lg p-2 before:absolute top-full before:-top-5 before:start-0 before:w-full before:h-5">
+                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                href="../blogs.html">
+                                Blogs
+                            </a>
 
-            <div
-              class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-60 hidden z-10 bg-main md:shadow-md rounded-lg p-2 before:absolute top-full before:-top-5 before:start-0 before:w-full before:h-5">
-              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                href="../industries/retail-ecommerce.html">
-                Retail & Ecommerce
-              </a>
+                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                href="../case-study/">
+                                Case Studies
+                            </a>
 
-              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                href="../industries/social-media.html">
-                Social Media
-              </a>
-              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                href="../industries/hospitality-solutions.html">
-                Hospitality
-              </a>
-              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                href="../industries/human-resources-recruitment.html">
-                Human Resources & Recruitment
-              </a>
-              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                href="../industries/manufacturing-solutions.html">
-                Manufacturing
-              </a>
-              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                href="../industries/transportation.html">
-                Transportation
-              </a>
-              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                href="../industries/warehouse.html">
-                Warehouse
-              </a>
-              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                href="../industries/construction-facility-services.html">
-                Construction & Facility Management
-              </a>
-              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                href="../industries/healthcare.html">
-                Healthcare
-              </a>
-            </div>
-          </div>
+                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                href="../company-profile.html">
+                                Corporate Profile
+                            </a>
 
-          <!-- Resources-->
-
-          <div
-            class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--trigger:hover] [--adaptive:none] py-3 ps-px sm:px-3 md:py-4">
-            <button type="button"
-              class="flex items-center w-full text-gray-600 hover:text-gray-300 focus:outline-none focus:text-gray-300">
-              Resources
-              <svg class="flex-shrink-0 ms-1 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="m6 9 6 6 6-6" />
-              </svg>
-            </button>
-
-            <div
-              class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-48 hidden z-10 bg-main md:shadow-md rounded-lg p-2 before:absolute top-full before:-top-5 before:start-0 before:w-full before:h-5">
-              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                href="../blogs.html">
-                Blogs
-              </a>
-
-              <!-- <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                        href="casestudies.html">
-                        Case Studies
-                    </a> -->
-
-              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                href="../company-profile.html">
-                Corporate Profile
-              </a>
-
-              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                href="../news">
-                News
-              </a>
+                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                href="../news">
+                                News
+                            </a>
 
 
-              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                href="../gallery">
-                Gallery
-              </a>
+                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                href="../gallery">
+                                Gallery
+                            </a>
 
-            </div>
-          </div>
+                        </div>
+                    </div>
 
-          <!-- Careers-->
-          <div
-            class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--trigger:hover] [--adaptive:none] py-3 ps-px sm:px-3 md:py-4">
-            <button type="button"
-              class="flex items-center w-full text-gray-600 hover:text-gray-300 focus:outline-none focus:text-gray-300">
-              Careers
-              <svg class="flex-shrink-0 ms-1 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="m6 9 6 6 6-6" />
-              </svg>
-            </button>
+                    <!-- Careers-->
+                    <div
+                        class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--trigger:hover] [--adaptive:none] py-3 ps-px sm:px-3 md:py-4">
+                        <button type="button"
+                            class="flex items-center w-full text-gray-600 hover:text-gray-300 focus:outline-none focus:text-gray-300">
+                            Careers
+                            <svg class="flex-shrink-0 ms-1 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </button>
 
-            <div
-              class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-48 hidden z-10 bg-main md:shadow-md rounded-lg p-2 before:absolute top-full before:-top-5 before:start-0 before:w-full before:h-5">
-              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
-                href="../careers.html">
-                Openings
-              </a>
+                        <div
+                            class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-48 hidden z-10 bg-main md:shadow-md rounded-lg p-2 before:absolute top-full before:-top-5 before:start-0 before:w-full before:h-5">
+                            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                                href="../careers.html">
+                                Openings
+                            </a>
 
-              <!-- <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
+                            <!-- <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-white hover:text-gray-300 font-medium focus:outline-none focus:text-gray-300"
                         href="companypictures.html">
                         Company Pictures
                     </a> -->
 
-            </div>
-          </div>
+                        </div>
+                    </div>
 
-          <div>
-            <a class="group inline-flex items-center gap-x-2 py-2 px-3 bg-main font-medium text-white rounded-full focus:outline-none"
-              href="../contact-us.html">
-              Contact us
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- End Collapse -->
-    </nav>
-  </header>
-  <!-- ========== END HEADER ========== -->
+                    <div>
+                        <a class="group inline-flex items-center gap-x-2 py-2 px-3 bg-main font-medium text-white rounded-full focus:outline-none"
+                            href="../contact-us.html">
+                            Contact us
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Collapse -->
+        </nav>
+    </header>
+    <!-- ========== END HEADER ========== -->
   <section>
     <div class="relative">
       <img
